@@ -3,15 +3,113 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>TP Infrastructure as Code</title>
+  <title>TP Infrastructure as Code - Nginx & Docker</title>
+  <style>
+    :root {
+      --bg-color: #0f172a;
+      --card-bg: #1e293b;
+      --accent: #38bdf8;
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+    }
+
+    body {
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-main);
+      margin: 0;
+      padding: 40px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 700px;
+      width: 100%;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    h1 {
+      font-size: 2rem;
+      color: var(--accent);
+      margin-bottom: 10px;
+    }
+
+    .date-badge {
+      display: inline-block;
+      background-color: rgba(56, 189, 248, 0.1);
+      color: var(--accent);
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+
+    .card {
+      background-color: var(--card-bg);
+      border-radius: 12px;
+      padding: 24px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      color: var(--accent);
+      font-size: 1.1rem;
+    }
+
+    p {
+      line-height: 1.6;
+      color: var(--text-muted);
+    }
+
+    .tech-stack {
+      display: flex;
+      gap: 10px;
+      margin-top: 15px;
+    }
+
+    .tag {
+      background-color: #0f172a;
+      color: var(--text-main);
+      padding: 4px 10px;
+      border-radius: 6px;
+      font-size: 0.85rem;
+      border: 1px solid #334155;
+    }
+  </style>
 </head>
 <body>
-  <h1> Ajout de titre pour montrer que mon tp fonctionne correctement </h1>
 
-  <h3> Date : 12/10/2026 </h3>
+  <div class="container">
+    <header>
+      <h1>TP Infrastructure as Code</h1>
+      <div class="date-badge">Date : 12/10/2026</div>
+    </header>
 
-  <p> Abusus enim multitudine hominum, quam tranquillis in rebus diutius rexit, ex agrestibus habitaculis urbes construxit multis opibus firmas et viribus, quarum ad praesens pleraeque licet Graecis nominibus appellentur, quae isdem ad arbitrium inposita sunt conditoris, primigenia tamen nomina non amittunt, quae eis Assyria lingua institutores veteres indiderunt. </p>
-  <p>Serveur Nginx exécuté dans Docker.</p>
-  <p>Déploiement géré par Infrastructure as Code.</p>
+    <div class="card">
+      <h3>Statut du Projet</h3>
+      <p>Votre infrastructure a été déployée avec succès. Le conteneur Nginx tourne de manière isolée et l'ensemble est entièrement piloté par Terraform.</p>
+      <div class="tech-stack">
+        <span class="tag">Docker</span>
+        <span class="tag">Terraform</span>
+        <span class="tag">Nginx</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>Extrait Historique</h3>
+      <p><em>"Abusus enim multitudine hominum, quam tranquillis in rebus diutius rexit, ex agrestibus habitaculis urbes construxit multis opibus firmas et viribus..."</em></p>
+    </div>
+  </div>
+
 </body>
 </html>
